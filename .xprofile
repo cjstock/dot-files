@@ -1,0 +1,1 @@
+xrandr --output HDMI-0 --off --output DP-0 --mode 2560x1440 --refresh 165 --pos 3840x0 --rotate right --output DP-1 --off --output DP-2 --primary --mode 3840x1600 --refresh 160 --pos 0x524 --rotate normal --output DP-3 --off --output DP-4 --off --output DP-5 --off
