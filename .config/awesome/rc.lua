@@ -313,7 +313,9 @@ globalkeys = gears.table.join(
         { description = "show help", group = "awesome" }),
     awful.key({ modkey, }, "Escape", awful.tag.history.restore,
         { description = "go back", group = "tag" }),
-
+    awful.key({ modkey, }, "Print", function()
+        awful.spawn("scrot -f -s -F '%F_%T.png' -e 'mv $f ~/Pictures/screenshots/'")
+    end, { description = "screenshot area of screen", group = "awesome" }),
     awful.key({ modkey, }, "j",
         function()
             awful.client.focus.byidx(1)
